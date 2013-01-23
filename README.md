@@ -18,7 +18,7 @@ Finally, execute the state of your choosing.
 
     sudo salt-call -c local.conf state.sls [state.name]
 
-# Provides States
+# Provided States
 
 * **openssl**
   Install the openssl package.  Also provides a template that will generate a
