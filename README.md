@@ -1,8 +1,20 @@
 # How to utilize
 
-These salt-states have been design to allow them to run easily without a salt
-master.  To do this, simply clone this repo to your machine, cd into the
-cloned repo, and the run the following command:
+These salt-states have only been tested on Debian Squeeze.  They have been
+designed to allow them to run easily without a salt master.  To do this, first
+install git and salt-minion.
+
+    sudo aptitude install git salt-minion
+
+Then clone this repo to your machine.
+
+    git clone https://github.com/therevmj/salt-states.git
+
+Change into the directory created by cloning the repo.
+
+    cd salt-states
+
+Finally, execute the state of your choosing.
 
     sudo salt-call -c local.conf state.sls [state.name]
 
